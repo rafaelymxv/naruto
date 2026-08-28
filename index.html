@@ -4,45 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo Naruto | Portal Ninja</title>
-    <!-- Importação da fonte Poppins do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="hero">
+        <div class="overlay"></div>
         <div class="header-content">
-            <p class="autor">Desenvolvido por: <span> rafa☠️​​☢️​⚰️​</span></p>
-            <h1>Universo Naruto</h1>
+            <p class="autor">Desenvolvido por: <span>Seu Nome Aqui</span></p>
+            <h1 class="titulo-principal">UNIVERSO NARUTO</h1>
             <p class="subtitulo">A Jornada do Ninja Humilde ao Lendário Hokage</p>
+            <a href="#conteudo" class="btn-explorar">Explorar Portal</a>
         </div>
     </header>
 
-    <main class="container">
+    <main class="container" id="conteudo">
 
-        <!-- Grid para os Destaques (Time 7 e Akatsuki) -->
+        <!-- Grid de Cards Interativos -->
         <section class="grid-cards">
-            <article class="card mini-card">
+            <article class="card card-destaque">
+                <div class="tag">EQUIPE</div>
                 <h2>Time 7</h2>
                 <div class="imagem-box">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr7vHGCubQ3HCFlEzE7z7nHZSQYWZJD-9O25BeWoDStpSS2ydT7axZwyM&s=10" alt="Time 7" class="imagem-anime">
                 </div>
-                <p>Formado por Naruto Uzumaki, Sasuke Uchiha e Sakura Haruno, sob a liderança do mestre Kakashi Hatake. O grupo de elite responsável pelos momentos mais marcantes da Vila da Folha.</p>
+                <p>Formado por Naruto, Sasuke e Sakura, sob o comando de Kakashi Hatake. O time principal responsável por moldar o futuro do mundo shinobi.</p>
             </article>
 
-            <article class="card mini-card">
-                <h2>Organização Akatsuki</h2>
+            <article class="card card-destaque">
+                <div class="tag antagonista">VILÕES</div>
+                <h2>Akatsuki</h2>
                 <div class="imagem-box">
                     <img src="https://static.wikia.nocookie.net/wikinaruto/images/e/e2/Akatsuki.jpg/revision/latest?cb=20100521232320&path-prefix=pt" alt="Akatsuki" class="imagem-anime">
                 </div>
-                <p>Uma temida organização formada por ninjas renegados de Rank-S. O objetivo principal do grupo é a captura das nove Bijuus para dominar o mundo shinobi.</p>
+                <p>A temida organização de ninjas renegados de Rank-S. Seu objetivo era capturar todas as Bijuus e dominar as grandes nações.</p>
             </article>
         </section>
 
-        <!-- Seção do Naruto Clássico -->
-        <section class="card">
+        <!-- Naruto Clássico -->
+        <section class="card card-longo">
             <h2>Naruto Clássico</h2>
             <div class="imagem-box">
                 <img src="https://cdn.europosters.eu/image/750/30382.jpg" alt="Naruto Clássico" class="imagem-anime banner-img">
@@ -51,8 +54,8 @@
             <p>A fase clássica apresenta o rigoroso Exame Chunin, vilões como Orochimaru e encerra com a emocionante batalha entre Naruto e Sasuke no Vale do Fim.</p>
         </section>
 
-        <!-- Seção do Naruto Shippuden -->
-        <section class="card">
+        <!-- Naruto Shippuden -->
+        <section class="card card-longo">
             <h2>Naruto Shippuden</h2>
             <div class="imagem-box">
                 <img src="https://image.tmdb.org/t/p/original/71mASgFgSiPl9QUexVH8BubU0lD.jpg" alt="Naruto Shippuden" class="imagem-anime banner-img">
@@ -60,16 +63,16 @@
             <p>Anos após o treinamento com Jiraiya, Naruto retorna mais forte para lidar com a ameaça global da Akatsuki. A saga expande o universo apresentando o Modo Eremita, a história de Itachi e culmina na Quarta Grande Guerra Ninja.</p>
         </section>
 
-        <!-- Seção de Vídeos Incorporados -->
+        <!-- Seção de Vídeos -->
         <section class="card videos-section">
-            <h2>Vídeos e Aberturas Marcantes</h2>
+            <h2>Multimídia & Aberturas</h2>
             <div class="grid-videos">
                 <div class="video-box">
-                    <h3>Vídeo 1</h3>
+                    <h3>Vídeo Clássico</h3>
                     <iframe src="https://www.youtube.com/embed/VgDgWzBL7s4" title="Video Naruto 1" allowfullscreen></iframe>
                 </div>
                 <div class="video-box">
-                    <h3>Vídeo 2</h3>
+                    <h3>Vídeo Shippuden</h3>
                     <iframe src="https://www.youtube.com/embed/DTmY-heSSIY" title="Video Naruto 2" allowfullscreen></iframe>
                 </div>
             </div>
@@ -77,16 +80,15 @@
 
     </main>
 
-    <!-- Rodapé Estilizado -->
     <footer>
         <div class="footer-container">
             <p class="footer-logo">Dattebayo! 🌀</p>
-            <p>Projeto de Estudo HTML & CSS | Criado por <strong>rafa☠️​​☢️​⚰️</strong></p>
-            <ul class="footer-links">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Personagens</a></li>
-                <li><a href="#">Sagas</a></li>
-            </ul>
+            <p>Projeto Desenvolvido por <strong>Seu Nome Aqui</strong></p>
+            <div class="footer-badges">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>VsCode</span>
+            </div>
         </div>
     </footer>
 
