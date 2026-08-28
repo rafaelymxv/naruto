@@ -3,94 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universo Naruto | Portal Ninja</title>
+    <title>Portal Ninja | Universo Naruto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="tema-folha">
 
-    <header class="hero">
-        <div class="overlay"></div>
-        <div class="header-content">
+    <!-- Menu Fixo -->
+    <nav class="navbar">
+        <div class="logo-nav">DATTEBAYO 🌀</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sagas">Sagas</a></li>
+            <li><a href="#personagens">Personagens</a></li>
+            <li><a href="#timeline">Linha do Tempo</a></li>
+            <li><a href="#quiz">Quiz Ninja</a></li>
+        </ul>
+        <button id="btn-tema" class="btn-theme">Modo Akatsuki 🌙</button>
+    </nav>
+
+    <!-- Banner Parallax -->
+    <header id="inicio" class="hero">
+        <div class="hero-content">
             <p class="autor">Desenvolvido por: <span>Seu Nome Aqui</span></p>
             <h1 class="titulo-principal">UNIVERSO NARUTO</h1>
             <p class="subtitulo">A Jornada do Ninja Humilde ao Lendário Hokage</p>
-            <a href="#conteudo" class="btn-explorar">Explorar Portal</a>
+            <a href="#sagas" class="btn-main">Explorar Conteúdo</a>
         </div>
     </header>
 
-    <main class="container" id="conteudo">
+    <!-- Estatísticas/Infográfico -->
+    <section class="stats-bar">
+        <div class="stat-item">
+            <h3>720</h3>
+            <p>Episódios Totais</p>
+        </div>
+        <div class="stat-item">
+            <h3>9</h3>
+            <p>Bijuus com Caudas</p>
+        </div>
+        <div class="stat-item">
+            <h3>4</h3>
+            <p>Grandes Guerras</p>
+        </div>
+        <div class="stat-item">
+            <h3>1</h3>
+            <p>Sonho: Virar Hokage</p>
+        </div>
+    </section>
 
-        <!-- Grid de Cards Interativos -->
-        <section class="grid-cards">
-            <article class="card card-destaque">
-                <div class="tag">EQUIPE</div>
-                <h2>Time 7</h2>
-                <div class="imagem-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr7vHGCubQ3HCFlEzE7z7nHZSQYWZJD-9O25BeWoDStpSS2ydT7axZwyM&s=10" alt="Time 7" class="imagem-anime">
-                </div>
-                <p>Formado por Naruto, Sasuke e Sakura, sob o comando de Kakashi Hatake. O time principal responsável por moldar o futuro do mundo shinobi.</p>
-            </article>
+    <main class="container">
 
-            <article class="card card-destaque">
-                <div class="tag antagonista">VILÕES</div>
-                <h2>Akatsuki</h2>
-                <div class="imagem-box">
-                    <img src="https://static.wikia.nocookie.net/wikinaruto/images/e/e2/Akatsuki.jpg/revision/latest?cb=20100521232320&path-prefix=pt" alt="Akatsuki" class="imagem-anime">
-                </div>
-                <p>A temida organização de ninjas renegados de Rank-S. Seu objetivo era capturar todas as Bijuus e dominar as grandes nações.</p>
-            </article>
-        </section>
-
-        <!-- Naruto Clássico -->
-        <section class="card card-longo">
-            <h2>Naruto Clássico</h2>
-            <div class="imagem-box">
-                <img src="https://cdn.europosters.eu/image/750/30382.jpg" alt="Naruto Clássico" class="imagem-anime banner-img">
+        <!-- Navegação por Abas -->
+        <section id="sagas" class="secao-abas">
+            <h2>Escolha a Era</h2>
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="openTab('classico')">Naruto Clássico</button>
+                <button class="tab-btn" onclick="openTab('shippuden')">Naruto Shippuden</button>
             </div>
-            <p>A história de Naruto Clássico acompanha a infância e o início da trajetória de Naruto Uzumaki, um jovem ninja da Vila Oculta da Folha. Desde o seu nascimento, Naruto carrega dentro de si a Raposa de Nove Caudas (Kurama). Isolado pelos moradores, ele define como objetivo tornar-se Hokage para conquistar o respeito de todos.</p>
-            <p>A fase clássica apresenta o rigoroso Exame Chunin, vilões como Orochimaru e encerra com a emocionante batalha entre Naruto e Sasuke no Vale do Fim.</p>
-        </section>
 
-        <!-- Naruto Shippuden -->
-        <section class="card card-longo">
-            <h2>Naruto Shippuden</h2>
-            <div class="imagem-box">
-                <img src="https://image.tmdb.org/t/p/original/71mASgFgSiPl9QUexVH8BubU0lD.jpg" alt="Naruto Shippuden" class="imagem-anime banner-img">
+            <div id="classico" class="tab-content active">
+                <div class="card card-longo">
+                    <h2>Saga Clássica</h2>
+                    <div class="imagem-box">
+                        <img src="https://cdn.europosters.eu/image/750/30382.jpg" alt="Naruto Clássico" class="banner-img">
+                    </div>
+                    <p>A história de Naruto Clássico acompanha a infância e o início da trajetória de Naruto Uzumaki, um jovem ninja da Vila Oculta da Folha (Konohagakure). Desde o seu nascimento, Naruto carrega dentro de si a Raposa de Nove Caudas (Kurama), um monstro temível que atacou a vila no passado. Por conta dessa condição, ele cresceu sendo isolado, rejeitado e olhado com desconfiança pelos moradores da aldeia.</p>
+                    <p>Após ser aprovado na Academia Ninja, ele passa a integrar a Equipe 7 com Sasuke e Sakura, liderados por Kakashi. A saga traz episódios marcantes como o Exame Chunin, o confronto com Orochimaru e a épica batalha no Vale do Fim.</p>
+                </div>
             </div>
-            <p>Anos após o treinamento com Jiraiya, Naruto retorna mais forte para lidar com a ameaça global da Akatsuki. A saga expande o universo apresentando o Modo Eremita, a história de Itachi e culmina na Quarta Grande Guerra Ninja.</p>
+
+            <div id="shippuden" class="tab-content">
+                <div class="card card-longo">
+                    <h2>Saga Shippuden</h2>
+                    <div class="imagem-box">
+                        <img src="https://image.tmdb.org/t/p/original/71mASgFgSiPl9QUexVH8BubU0lD.jpg" alt="Naruto Shippuden" class="banner-img">
+                    </div>
+                    <p>Naruto Shippuden se passa dois anos e meio após o treinamento de Naruto com Jiraiya. A ameaça agora é em escala global com a Akatsuki buscando capturar todas as Bijuus. A jornada aprofunda o passado do clã Uchiha, introduz o Modo Eremita e culminating na Quarta Grande Guerra Ninja.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Seção de Vídeos -->
-        <section class="card videos-section">
-            <h2>Multimídia & Aberturas</h2>
+        <!-- Galeria de Personagens (Flip Cards) -->
+        <section id="personagens" class="secao-personagens">
+            <h2>Personagens & Organizações (Passe o mouse)</h2>
+            <div class="grid-cards">
+                
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr7vHGCubQ3HCFlEzE7z7nHZSQYWZJD-9O25BeWoDStpSS2ydT7axZwyM&s=10" alt="Time 7">
+                            <h3>Time 7</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Liderados por Kakashi</h3>
+                            <p>Composto por Naruto Uzumaki, Sasuke Uchiha e Sakura Haruno. O time principal de Konoha.</p>
+                            <span class="badge">Vila da Folha</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://static.wikia.nocookie.net/wikinaruto/images/e/e2/Akatsuki.jpg/revision/latest?cb=20100521232320&path-prefix=pt" alt="Akatsuki">
+                            <h3>Akatsuki</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Ninjas Renegados</h3>
+                            <p>Organização mercenária de classe S focada em reunir as 9 Feras com Cauda para redefinir o mundo.</p>
+                            <span class="badge red">Vilões</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Linha do Tempo -->
+        <section id="timeline" class="secao-timeline">
+            <h2>Linha do Tempo dos Arcos</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>1. País das Ondas</h3>
+                        <p>Primeira grande missão do Time 7 enfrentando Zabuza Momochi e Haku.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>2. Exame Chunin</h3>
+                        <p>Apresentação dos ninjas das outras vilas e invasão de Orochimaru.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>3. Ataque de Pain</h3>
+                        <p>Naruto domina o Modo Eremita e salva Konoha da destruição total.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>4. 4ª Guerra Ninja</h3>
+                        <p>União de todas as 5 grandes nações contra Madara Uchiha e Kaguya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vídeos -->
+        <section class="secao-videos">
+            <h2>Vídeos e Aberturas</h2>
             <div class="grid-videos">
-                <div class="video-box">
-                    <h3>Vídeo Clássico</h3>
-                    <iframe src="https://www.youtube.com/embed/VgDgWzBL7s4" title="Video Naruto 1" allowfullscreen></iframe>
-                </div>
-                <div class="video-box">
-                    <h3>Vídeo Shippuden</h3>
-                    <iframe src="https://www.youtube.com/embed/DTmY-heSSIY" title="Video Naruto 2" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VgDgWzBL7s4" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/DTmY-heSSIY" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Quiz Interativo -->
+        <section id="quiz" class="card quiz-card">
+            <h2>Quiz: Qual seu Nível Ninja?</h2>
+            <div id="quiz-box">
+                <p id="pergunta">Qual é o maior sonho do Naruto?</p>
+                <div class="quiz-options">
+                    <button onclick="responder(true)">Tornar-se Hokage</button>
+                    <button onclick="responder(false)">Aprender todos os jutsus</button>
+                    <button onclick="responder(false)">Destruir a Akatsuki</button>
                 </div>
             </div>
+            <p id="quiz-resultado" class="resultado-oculto"></p>
         </section>
 
     </main>
 
+    <!-- Rodapé -->
     <footer>
-        <div class="footer-container">
+        <div class="footer-content">
             <p class="footer-logo">Dattebayo! 🌀</p>
             <p>Projeto Desenvolvido por <strong>Seu Nome Aqui</strong></p>
-            <div class="footer-badges">
+            <div class="badges">
                 <span>HTML5</span>
                 <span>CSS3</span>
-                <span>VsCode</span>
+                <span>JavaScript</span>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
