@@ -3,44 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universo Naruto</title>
+    <title>Universo Naruto | Portal Ninja</title>
+    <!-- Importação da fonte Poppins do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <p class="autor">Projeto desenvolvido por: <strong>Seu Nome Aqui</strong></p>
-        <h1>Universo Naruto: Clássico e Shippuden</h1>
+        <div class="header-content">
+            <p class="autor">Desenvolvido por: <span>Seu Nome Aqui</span></p>
+            <h1>Universo Naruto</h1>
+            <p class="subtitulo">A Jornada do Ninja Humilde ao Lendário Hokage</p>
+        </div>
     </header>
 
     <main class="container">
 
+        <!-- Grid para os Destaques (Time 7 e Akatsuki) -->
+        <section class="grid-cards">
+            <article class="card mini-card">
+                <h2>Time 7</h2>
+                <div class="imagem-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr7vHGCubQ3HCFlEzE7z7nHZSQYWZJD-9O25BeWoDStpSS2ydT7axZwyM&s=10" alt="Time 7" class="imagem-anime">
+                </div>
+                <p>Formado por Naruto Uzumaki, Sasuke Uchiha e Sakura Haruno, sob a liderança do mestre Kakashi Hatake. O grupo de elite responsável pelos momentos mais marcantes da Vila da Folha.</p>
+            </article>
+
+            <article class="card mini-card">
+                <h2>Organização Akatsuki</h2>
+                <div class="imagem-box">
+                    <img src="https://static.wikia.nocookie.net/wikinaruto/images/e/e2/Akatsuki.jpg/revision/latest?cb=20100521232320&path-prefix=pt" alt="Akatsuki" class="imagem-anime">
+                </div>
+                <p>Uma temida organização formada por ninjas renegados de Rank-S. O objetivo principal do grupo é a captura das nove Bijuus para dominar o mundo shinobi.</p>
+            </article>
+        </section>
+
+        <!-- Seção do Naruto Clássico -->
         <section class="card">
             <h2>Naruto Clássico</h2>
             <div class="imagem-box">
-                <img src="https://cdn.europosters.eu/image/750/30382.jpg" alt="Naruto Clássico" class="imagem-anime">
+                <img src="https://cdn.europosters.eu/image/750/30382.jpg" alt="Naruto Clássico" class="imagem-anime banner-img">
             </div>
-            <p>
-                A história de Naruto Clássico acompanha a infância e o início da trajetória de Naruto Uzumaki, um jovem ninja da Vila Oculta da Folha (Konohagakure). Desde o seu nascimento, Naruto carrega dentro de si a Raposa de Nove Caudas (Kurama), um monstro temível que atacou a vila no passado. Por conta dessa condição, ele cresceu sendo isolado, rejeitado e olhado com desconfiança pelos moradores da aldeia. Para superar a solidão e conquistar o respeito e o reconhecimento de todos, Naruto define como seu grande objetivo de vida tornar-se o Hokage, o líder supremo e o ninja mais forte da sua vila.
-            </p>
-            <p>
-                Após ser aprovado na Academia Ninja, ele passa a integrar a Equipe 7, sob a liderança do experiente e misterioso mestre Kakashi Hatake. O time conta também com Sasuke Uchiha, um prodígio focado em se vingar da destruição de seu clã, e Sakura Haruno, uma jovem inteligente que busca se provar como uma kunoichi de valor. Ao longo do anime clássico, o grupo enfrenta missões perigosas, como o combate contra Zabuza Momochi e Haku, além do rigoroso Exame Chunin, evento que testa as habilidades dos jovens ninjas e introduz vilões marcantes como Orochimaru. A fase clássica culmina no dramático confronto entre Naruto e Sasuke no Vale do Fim, quando Sasuke decide abandonar a vila em busca de poder, levando Naruto a se dedicar a um intenso treinamento com o mestre Jiraiya para resgatar seu amigo no futuro.
-            </p>
+            <p>A história de Naruto Clássico acompanha a infância e o início da trajetória de Naruto Uzumaki, um jovem ninja da Vila Oculta da Folha. Desde o seu nascimento, Naruto carrega dentro de si a Raposa de Nove Caudas (Kurama). Isolado pelos moradores, ele define como objetivo tornar-se Hokage para conquistar o respeito de todos.</p>
+            <p>A fase clássica apresenta o rigoroso Exame Chunin, vilões como Orochimaru e encerra com a emocionante batalha entre Naruto e Sasuke no Vale do Fim.</p>
         </section>
 
+        <!-- Seção do Naruto Shippuden -->
         <section class="card">
             <h2>Naruto Shippuden</h2>
             <div class="imagem-box">
-                <img src="https://image.tmdb.org/t/p/original/71mASgFgSiPl9QUexVH8BubU0lD.jpg" alt="Naruto Shippuden" class="imagem-anime">
+                <img src="https://image.tmdb.org/t/p/original/71mASgFgSiPl9QUexVH8BubU0lD.jpg" alt="Naruto Shippuden" class="imagem-anime banner-img">
             </div>
-            <p>
-                Naruto Shippuden se passa aproximadamente dois anos e meio após os eventos da fase clássica, mostrando o retorno de um Naruto mais alto, maduro e consideravelmente mais forte após o treinamento com Jiraiya. Nesta nova etapa, os desafios tornam-se infinitamente maiores e as ameaças assumem uma escala global. A principal força antagônica da trama é a Akatsuki, uma organização criminosa composta por ninjas renegados de alto nível que buscam capturar todas as Bijuus (as feras com caudas) para dominar o mundo ninja.
-            </p>
-            <p>
-                A jornada do Shippuden aprofunda o desenvolvimento dos personagens, revelando os segredos do passado do clã Uchiha, a história por trás do sacrifício de Itachi Uchiha e as origens do próprio mundo shinobi. Naruto enfrenta batalhas lendárias e marcantes, como o confronto contra Pain, o líder da Akatsuki, onde ele alcança o Modo Eremita e se torna o grande herói reconhecido por toda a Vila da Folha. A narrativa culmina na Quarta Grande Guerra Ninja, uma aliança entre todas as nações para combater a ameaça de Madara Uchiha e Kaguya Otsutsuki. Além da salvação do mundo, o clímax da história traz o tão aguardado confronto final entre Naruto e Sasuke, resultando no entendimento mútuo, na restauração do laço entre os dois e na realização do grande sonho de Naruto ao se tornar Hokage.
-            </p>
+            <p>Anos após o treinamento com Jiraiya, Naruto retorna mais forte para lidar com a ameaça global da Akatsuki. A saga expande o universo apresentando o Modo Eremita, a história de Itachi e culmina na Quarta Grande Guerra Ninja.</p>
         </section>
+
+        <!-- Seção de Vídeos Incorporados -->
+        <section class="card videos-section">
+            <h2>Vídeos e Aberturas Marcantes</h2>
+            <div class="grid-videos">
+                <div class="video-box">
+                    <h3>Vídeo 1</h3>
+                    <iframe src="https://www.youtube.com/embed/VgDgWzBL7s4" title="Video Naruto 1" allowfullscreen></iframe>
+                </div>
+                <div class="video-box">
+                    <h3>Vídeo 2</h3>
+                    <iframe src="https://www.youtube.com/embed/DTmY-heSSIY" title="Video Naruto 2" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Rodapé Estilizado -->
+    <footer>
+        <div class="footer-container">
+            <p class="footer-logo">Dattebayo! 🌀</p>
+            <p>Projeto de Estudo HTML & CSS | Criado por <strong>Seu Nome Aqui</strong></p>
+            <ul class="footer-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Personagens</a></li>
+                <li><a href="#">Sagas</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>
